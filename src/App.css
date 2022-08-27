@@ -10,3 +10,19 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+button{
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  background-color: aqua;
+}
+
+i{
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}

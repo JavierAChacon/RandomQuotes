@@ -1,12 +1,14 @@
-import { useState } from 'react'
 import './App.css'
 import QuoteBox from './components/QuoteBox'
 
 function App() {
-
+  
+  const random = Math.floor(Math.random() * 20)
+  
   return (
     <div className="App">
-     <QuoteBox/>
+     <QuoteBox
+     />
     </div>
   )
 }

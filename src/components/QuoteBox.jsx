@@ -1,18 +1,17 @@
 import quotes from '../quotes.json'
-import random from './Random'
+
 
 const QuoteBox = () => {
-    
     return(
     <div className="quotebox">
         <div className="message">
             <img src=""/>
-            <p>{quotes[random].quote}</p>
+            <p>{quotes[0].quote}</p>
         </div>
 
         <div className="author">
-            <p>Arroz</p>
-            <button><img src=""/></button>
+            <p>{quotes[0].author}</p>
+            <button><i class="fi fi-rr-arrow-small-right"></i></button>
         </div>
     </div>
     )
