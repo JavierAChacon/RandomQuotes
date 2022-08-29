@@ -21,13 +21,14 @@ body{
 .quotebox{
   background-color: white;
   border-radius: 0.75rem;
-  width: 90%;
+  width: 40em;
   height: 14em;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   row-gap: 1rem;
+  margin: 1rem;
 }
 
 .message{
