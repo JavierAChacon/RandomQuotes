@@ -4,8 +4,6 @@ import randomColor from "./randomColor"
 import quotes from '../quotes.json'
 import random from "./Random"
 
-
-
 const QuoteBox = () => {
 
     const [index, setIndex] = useState(random)
@@ -19,7 +17,8 @@ const QuoteBox = () => {
 
 
     return (
-        <div className='quotebox'>
+       
+       <div className='quotebox'>
 
             <div className='message'>
                 <i style={{ color: `${colors[randomColor]}` }} class={`quote fa-solid fa-quote-left quote`}></i>
@@ -32,6 +31,7 @@ const QuoteBox = () => {
             </div>
 
         </div>
+    
     )
 }
 
