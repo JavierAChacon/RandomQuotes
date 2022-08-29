@@ -1,15 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 import quotes from './quotes.json'
+import colors from './components/Colors'
+import random from './components/Random'
+import randomColor from './components/randomColor'
 
 function App() {
-  const random = Math.floor(Math.random() * quotes.length)
-
-  const [index, setIndex] = useState(random)
-
-  const colors = ['#104F55', '#32746D', '#9EC5AB', '#FAC9B8', '#EF476F', '#D3F2A3', '#97E196', '#6CC08B', '#4C9B82', '#217A79', '#105965', '#074050' ]
   
-  const randomColor = Math.floor(Math.random() * colors.length)  
+  const [index, setIndex] = useState(random)
   
   const change = () => {
     const random = Math.floor(Math.random() * quotes.length)
