@@ -8,11 +8,11 @@ function App() {
 
   const [index, setIndex] = useState(random)
 
+
   const change = () => {
     const random = Math.floor(Math.random() * quotes.length)
     setIndex(random)
-
-
+    
   }
 
   return (
@@ -20,7 +20,7 @@ function App() {
 
       <div className='quotebox'>
         <div className='message'>
-          <i class="quote fa-solid fa-quote-left quote"></i>
+          <i class={`quote fa-solid fa-quote-left quote`}></i>
           <p>{quotes[index].quote}</p>
         </div>
 
