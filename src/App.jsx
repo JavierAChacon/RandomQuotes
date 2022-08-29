@@ -7,16 +7,16 @@ function App() {
 
   const [index, setIndex] = useState(random)
 
+  const colors = ['#104F55', '#32746D', '#9EC5AB', '#FAC9B8', '#EF476F']
   
+  const randomColor = Math.floor(Math.random() * colors.length)  
   
   const change = () => {
     const random = Math.floor(Math.random() * quotes.length)
     setIndex(random)
   }
   
-  const colors = ['#BAF2E9', '#AFF8DD', '#B0FCC8', '#BFFEAD', '#D8FD8F', '#F9F871']
   
-  const randomColor = Math.floor(Math.random() * colors.length)
 
   return (
     <div style={{backgroundColor: `${colors[randomColor]}`}} className="App">
