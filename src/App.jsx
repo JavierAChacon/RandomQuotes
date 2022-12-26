@@ -47,9 +47,7 @@ function App() {
           />
           <button style={{ backgroundColor: `${colors[randomColor]}` }} onClick={change}><Button/></button>
         </div>
-
       </div>
-
     </div>
   )
 }
